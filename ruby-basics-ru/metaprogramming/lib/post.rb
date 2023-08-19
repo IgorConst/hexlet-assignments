@@ -4,16 +4,11 @@ require_relative './model'
 require 'date'
 
 class Post
-  # extend Model
   include Model
 
-  #attribute :id, type: :integer
-  #attribute :title, type: :string
-  #attribute :body, type: :string
-  #attribute :created_at, type: :datetime
-  #attribute :published, type: :boolean
+  attribute :id, type: :integer
+  attribute :title, type: :string
+  attribute :body, type: :string
+  attribute :created_at, type: :datetime
+  attribute :published, type: :boolean
 end
-
-# p = Post.new  {type: :integer}
-# puts p.inspect
-# p.atribute
