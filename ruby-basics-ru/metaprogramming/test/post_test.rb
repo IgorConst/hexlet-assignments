@@ -49,14 +49,14 @@ class PostTest < Minitest::Test
   def test_each_model_has_its_own_attributes
     post1 = Post.new title: 'test1'
     post2 = Post.new title: 'test2'
-    #     puts 'post1 &&&&  post2'
-    #     puts post1.instance_variables
-    #     puts post1.methods - Object.methods
-    #     puts '-=-=111-=-=-=-'
-    #     puts post2.instance_variables
-    #     puts post2.methods - Object.methods
-    #     puts '-=-=222-=-=-=-'
-    #     assert { post1.title == 'test1' }
+         puts 'post1 &&&&  post2'
+         puts post1.instance_variables
+         puts post1.methods - Object.methods
+         puts '-=-=111-=-=-=-'
+         puts post2.instance_variables
+         puts post2.methods - Object.methods
+         puts '-=-=222-=-=-=-'
+    assert { post1.title == 'test1' }
     assert { post2.title == 'test2' }
     assert { post1.title != post2.title }
   end
