@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+bulletin1:
+  id: 1
+  title: Title 1
+  body: Text of body field
+  published: false
+
+bulletin2:
+  id: 2
+  title: Title 2
+  body: Она прошла как каравелла по зеленым волнам
+  published: true
