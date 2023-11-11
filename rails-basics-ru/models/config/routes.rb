@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-
-  root 'home#index'
   # BEGIN
-  get 'articles/index'
+  root 'home#index'
+  # get 'articles/index'
   # get 'articles/show'
-  resources :articles, only: :show
+  resources :articles, only: [:index, :show]
   # , as: 'article'
   # END
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

@@ -20,7 +20,7 @@ class ArticlesTest < ActionDispatch::IntegrationTest
     get article_url(@article)
 
     assert_select 'h1', @article.title
-    assert_select 'p', @article.body
+    assert_select 'h2', @article.body
 
     assert_response :success
   end
